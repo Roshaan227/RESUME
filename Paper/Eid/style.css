@@ -1,0 +1,73 @@
+*{
+margin : 0;
+padding : 0;
+box-sizing : border-box
+}
+
+html,body {
+width :100%;
+height :100%;
+background: rgb(245, 198, 205);
+}
+.pict{
+    display: flex;
+    justify-content: space-between;
+}
+.pict img{
+    width: 20vw;
+    height: 15vw;
+    object-fit: cover;
+    padding-right: 1vw;
+    right: 350px;
+    padding-top: 1vw;
+    position: relative;
+}
+h1{
+    position: relative;
+    color: red;
+    font-size: 15vw;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1vw;
+    left: 10vw;
+}
+.eid p{
+    color: goldenrod;
+    font-size: 4vw;
+    padding-top: 4vw;
+    padding-left: 4vw;
+}
+h2{
+    color: palevioletred;
+    font-size: 10vw;
+    position: relative;
+    left: 35vw;
+}
+.fly{
+    display: flex;
+    justify-content: space-between;
+}
+.fly img{
+    top: 70%;
+    padding-top: 1vw;
+    position: relative;
+    padding-right: 10vw;
+    object-fit: cover;
+}
+.ashna p{
+    font-size: 2vw;
+    color: red;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

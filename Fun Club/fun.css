@@ -1,0 +1,412 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+#main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    z-index: 100;
+    
+}
+#page-1{
+        width: 100%;
+    background-color:#b8a6aa;
+    position: relative;
+    padding: 0 2vh;
+    
+}
+nav{
+    padding: 2vh 2vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+#nav-part2 h4{
+    background-color: #b6838ed5;
+
+    border-radius: 50px;
+        padding: 10px 20px;
+    border: 1px solid rgb(42, 42, 42);
+    transition: all ease 0.5s;
+    font-weight: 500;
+    position: relative;
+    font-size: 20px;
+    overflow: hidden;
+}
+#nav-part2 h4::after{
+   
+    overflow: hidden;
+       content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.5s;
+ 
+    border-radius: 50%;
+    overflow: hidden;
+}
+#nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    text-decoration: none;
+    color: black;
+    z-index: 9;
+    position: relative ;
+}
+#nav-part2 h4 a:hover{
+    color: bisque;
+   
+    position: relative;
+    }
+#box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 74vh;
+    padding-top: 40vh;
+    padding-bottom: 12vh;
+    border-bottom: 2px solid rgba(252, 159, 159, 0.728);
+
+}
+#left h4{
+    line-height: 3vh;
+    padding: 10px;
+    width: 30vh;
+    font-size: 2.8vh;
+    color:black;
+    }
+#right {
+    padding: 10px;
+    font-size: 10vh;
+    color: brown;
+    line-height: 17vh;
+    text-align: right;
+}
+#video{
+    position: relative;
+     width: 100%;
+     border-radius: 30px;
+     margin-top: 4vh;
+}
+#hero-shape{
+    display: flex;
+    margin-top: 30px;
+    padding-right: 100px;
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+
+    border-radius: 50%;
+    right: 0;
+    top: 65vh;
+    filter: blur(0px);
+    
+}
+#hero-1{
+    position: absolute;
+    width: 100vh;
+    height: 20vh;
+    background-color: rgb(130, 7, 130);
+    border-radius: 50%;
+    margin-right: 39px;
+    filter: blur(80px);
+    animation-name: anime1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#hero-2{
+    margin-left: 60px;
+    position: absolute;
+    width: 60vh;
+    height: 25vh;
+    background-color: rgb(130, 7, 130);
+    border-radius: 50%;
+    filter: blur(60px);
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#hero-3{
+    margin-left: 40px;
+    padding-right: 100px;
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    background-color: rgb(130, 7, 130);
+    border-radius: 50%;
+    margin-right: 200px;
+    filter: blur(80px);
+    animation-name: anime3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes anime3 {
+    from{
+        transform: translate(55%,-10%);
+    }
+    to{
+        transform: translate(10%,-10%);
+    }
+    
+}
+@keyframes anime1 {
+    from{
+        transform: translate(-760%,10%);
+    }
+    to{
+        transform: translate(20%,-30%);
+    }
+    
+}
+@keyframes anime2 {
+    from{
+      transform: translate(10%,-50%);
+    }
+    to{
+        transform: translate(-60%,-10%);
+    }
+}
+#page-2{
+        white-space: nowrap;
+    padding-top: 6vh;
+    width: 100%;
+    
+    background-color:#b8a6aa;
+    position: relative;
+
+    }
+#moving-text{
+    min-height: 200px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+} 
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.con h1{
+    display: inline-block;
+    font-size: 20vh;
+}
+#gola{
+    margin: 2vh;
+    border-radius: 50%;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(138, 9, 108, 0.767);
+
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+ #page2-bottom{
+   margin-right: 30px;
+    padding: 50px;
+    padding-left: 87px;
+    width: 100%;
+    
+    background-color:#b29fa3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2-bottom h1{
+    z-index: 9;   
+    width: 40%;
+    font-size: 2vw;
+    width: 40%;
+    color: rgb(54, 4, 4);
+    line-height: 3.3vw ;
+}
+#page2-bottom2{
+    width: 30%;
+}
+#page2-bottom2 img{
+    border-radius: 10px;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+}
+#page2-bottom2 p{
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+}
+#goo{
+    width: 300px;
+    height: 220px;
+    background-color: rgb(201, 25, 12);
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 150px;   
+    animation-name: anime4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    top: 60%;
+    left: 25%;
+    
+    background: linear-gradient(to right,rgb(169, 42, 33),rgb(41, 41, 202));
+}
+@keyframes anime4{
+    from{
+        transform: translate(40%,-4%) skew(0);
+    }
+    to{
+        transform: translate(-40%,4%) skew(40deg);
+    }
+}
+#page-3{
+    width: 100%;
+    
+    background-color:#cab5b9;
+    }
+    #Box{
+        margin-right: 3vh;
+    }
+
+.elem{
+    margin-left: 3vh;
+    margin-right: 4vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+        border-bottom: 1px solid rgba(27, 26, 26, 0.104);
+}
+.elem h2{
+    padding-top: 6vh;
+    padding-left: 3vh;
+   justify-content: center;
+    
+    font-size: 4hv;
+    color: #66061af6;
+    z-index: 9;
+    position: relative;
+}
+
+.elem .overlay{
+
+    width: 100%;
+    height: 100px;
+    background-color: #700e22e1;
+    top: -100%;
+    color: azure;
+    position: absolute;
+    transition: all ease 0.6s;
+}
+.elem:hover .overlay{
+    top: 0;
+}
+.elem:hover h2{
+    color: white;
+}
+#fixed-images{
+    height: 40vh;
+    width: 29vh;
+    background-color: red;
+    z-index: 200;
+    position: fixed;
+    border-radius: 5px;
+    top: 40%;
+    display: none;
+    left: 60%;
+    background-position: center;
+    background-size: cover;
+}
+#page-4{
+   
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: beige;
+    background-color: black;
+    z-index: 99;
+    margin-bottom: 10vw;
+}
+#page-4 h1{
+    display: flex;
+    padding-top: 10vh;
+    text-align: center;
+    padding-left: 20vh;
+    font-size: 30vh;
+    color:whitesmoke;
+}
+#page-4 input{
+    background-color: black;
+    margin-top: 10vh;
+    width: 50vh;
+    border: none;
+    height: 15vh;
+    margin-left: 150vh;
+    border-bottom: 1px solid grey;
+}
+#page-4 input::placeholder{
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3vh;
+}
+#page-5{
+    padding: 8vw 2vw;
+    width: 100%;
+    height:100vh;
+    background-color: #904e85e8;
+}
+#page-5 h1{
+    font-size: 8vw;
+} 
+#page-5 input{
+    margin-left: 40vw;
+    font-size: 2vw;
+    width: 40%;
+    padding: 1rem;
+    border: 4px solid rgba(54, 2, 65, 0.678);
+   margin-top: 15vw;
+   border-radius: 2rem;
+}
+
+  
+
+
+  
+
+
+

@@ -1,0 +1,257 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "General Sans";
+
+   }
+html,body{
+    
+    width: 100%;
+    height: auto;
+    background-color:black;
+    }
+
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 9999999;
+}
+#main{
+    width: 100%;
+}
+
+
+#home{
+    width: 100%;
+    height: auto; 
+    color: white;
+    background-color:rgba(128, 128, 128, 0.195);
+}
+#nav{
+      
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+}
+#nav a {
+    padding-top: 1vw;
+    color: white;
+    text-decoration: none;
+    
+}
+#heading{
+    
+    margin-top: 6vw;
+    opacity: .6;
+}
+#heading h1{
+    
+    margin-left: 5vh;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-family: "General Sans";
+    font-weight: 900;
+    line-height: 1;
+}
+#heading  #for{
+    margin-left: 130px;
+}
+.block-text{
+    flex-direction: column;
+    display: flex;
+    align-items: end;
+    width: fit-content;
+    align-items: end;
+    }
+    .block-text h5{
+        text-align: right;
+        
+        font-size: 15px;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
+    #smallHeading{
+        margin-top: 100px;
+        padding-right: 30px;
+    }
+    #smallHeading h5{
+     text-transform: uppercase;
+     margin-top: 10px;
+     text-align: right;
+     font-size: 2vw;   
+     height: 0.5;
+    }
+#homefooter{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#homefooter a {
+    padding-left: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#homefooter .circle{
+    width: 30px;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#homefooter #iconset{
+   
+    display: flex;
+}
+#second{
+    padding: 3.5vw 3vw;
+    width: 100%;
+    padding-right: 8vw;
+   padding-top: 10vw;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.195);
+    
+}
+.elem{
+    align-items: center;
+        width: 100%;
+    padding: 2vw 3vw;
+    color: white;
+    font-size: 8vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding-right: 0;
+    }
+    .elem h1{
+        opacity: 0.6;
+
+    }
+.elemlast{
+    border-bottom: 1px solid grey;
+}
+.year{
+    opacity: 0.8;
+    font-size: 1.3vw;
+    align-items: center;
+}
+.elem img{
+    height: 140%;
+    position: absolute;
+    z-index: 99;
+}
+#third{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    align-items: center;
+    color: white;
+   
+    padding-right: 14vw;
+    gap: 4vw;
+    width: 100vw;
+    
+    background: rgba(128, 128, 128, 0.195);
+    display: flex;
+     }
+     
+     
+    #third img{
+        padding-top: 10vh;
+        padding-right: 10vh;
+        width: 50%;
+        height: 70%;
+}
+    #third p{
+        width: 90%;
+        font-size: 1.5vw;
+        justify-content: right;
+    }
+    #third span{
+        display: flex;
+    opacity: 0.7;
+    padding-left: 40vw;
+    padding-bottom: 4vh;
+}
+#third button{
+
+    
+    margin-top: 7vh;
+    width: 11vw;
+    background: #000;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5vh;
+    padding: 1.5vw 1vw;
+    font-size: 1.5vw;
+    font-size: 1.4vw;
+   }
+   #third button:hover{
+    background: white;
+    color: black;
+    border: none;
+   }
+#third h4{
+    justify-content: left;
+    color: white;
+
+} 
+#subscribe{
+    color: white;
+    background:rgba(128, 128, 128, 0.195);
+    width: 100%;
+    padding: 2vw 2vw;
+    padding-bottom: 6vw;
+    line-height: 1.3;
+}
+#subscribe h6{
+    opacity: 0.8;
+    font-size: 1vw;
+}
+#subscribe a {
+    text-decoration: none;
+    font-size: 1.7vw;
+    color: white;
+}
+#footer{
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw 2vw;
+    color: white;
+    background: rgba(128, 128, 128, 0.195);
+    display: flex;
+    padding-bottom: 1vw;
+}
+#footerleft{
+    display: flex;
+    gap: 3vw;
+}
+#footerright{
+    justify-content: right;
+    display: flex;
+    padding: 2vw 2vw;
+    gap: 6vh;
+}
+#footerright a {
+    
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: white;
+}

@@ -1,0 +1,138 @@
+*{
+margin : 0;
+padding : 0;
+box-sizing : border-box
+}
+
+html,body {
+width :100%;
+height :100%;
+background-color: rgb(231, 204, 213);
+
+}
+
+h1{
+    background: rgb(2, 2, 29);
+    color: white;
+    line-height: 5rem;
+    height: 5rem;
+    text-align: center;
+    word-spacing: 3vw;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 5rem;
+    gap: 5rem;
+}
+.choice{
+    height: 165px;
+    width: 165px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     border-radius: 50%; 
+     display: flex;
+}
+.choice:hover{
+   background: rgb(2, 2, 29);
+   border: 1px solid black;
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+.choice img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+}
+.score-user #user{
+   padding-bottom: 2rem;
+   display:block;
+   color: aliceblue;
+   border-radius: 30%;
+   background: rgb(16, 3, 28);
+   width: 50px;
+   height: 20px;
+   overflow: hidden;
+}
+.score-user p{
+    font-size: 1.9vw;
+    font-weight: 600;
+
+}
+
+.score-comp #comp{
+    padding-bottom: 2rem;
+   display:block;
+   color: aliceblue;
+   border-radius: 30%;
+   background: rgb(16, 3, 28);
+   width: 50px;
+   height: 20px;
+   overflow: hidden;
+}
+.score-comp p{
+    font-size: 1.9vw;
+    font-weight: 600;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.msg-container:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+    background: white;
+    opacity: 0.9;
+   
+}
+.msg-container{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem; 
+    padding: 1rem;
+    border-radius: 30%;
+    background-color:  rgb(16, 3, 28);
+}
+
+.msg-container p{
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+   
+}
+.msg-container p:hover{
+    color:rgb(16, 3, 28);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
